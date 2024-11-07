@@ -9,6 +9,137 @@
       src="https://kit.fontawesome.com/44f3d7159d.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      /* ! resets */
+      *,
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        direction: rtl;
+        background-color: #ededed;
+      }
+      a {
+        text-decoration: none;
+      }
+      ul,
+      ol,
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .circle-menu {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .menu-button {
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 58px;
+        border-radius: 50%;
+        background: linear-gradient(
+          270deg,
+          rgba(255, 206, 236, 1) 0%,
+          rgba(255, 206, 236, 1) 25%,
+          rgba(152, 151, 240, 1) 75%,
+          rgba(152, 151, 240, 1) 100%
+        );
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      .menu-button:hover {
+        box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      .menu-button i {
+        font-size: 20px;
+        transition: transform 0.3s;
+      }
+
+      .menu-button:active {
+        box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.4);
+      }
+
+      .circle-menu.active .menu-button {
+        box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      .circle-menu.active .menu-button:hover {
+        box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.4);
+      }
+
+      .active .menu-button i {
+        transform: rotate(45deg);
+      }
+
+      .circle-menu::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient(
+          270deg,
+          rgba(255, 206, 236, 1) 0%,
+          rgba(255, 206, 236, 1) 25%,
+          rgba(152, 151, 240, 1) 75%,
+          rgba(152, 151, 240, 1) 100%
+        );
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+        transition: all 0.3s ease;
+      }
+
+      .circle-menu.active::after {
+        transform: scale3d(6, 6, 1);
+      }
+
+      .menu-item {
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        right: 0;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.1);
+        text-align: center;
+        line-height: 50px;
+        z-index: -1;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .menu-item:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      .circle-menu.active .items-wrapper .menu-item:nth-child(1) {
+        transform: translate3d(16px, -105px, 0);
+      }
+      .circle-menu.active .items-wrapper .menu-item:nth-child(2) {
+        transform: translate3d(-47px, -92px, 0);
+      }
+      .circle-menu.active .items-wrapper .menu-item:nth-child(3) {
+        transform: translate3d(-92px, -47px, 0);
+      }
+      .circle-menu.active .items-wrapper .menu-item:nth-child(4) {
+        transform: translate3d(-105px, 16px, 0);
+      }
+    </style>
   </head>
   <body>
     <div class="circle-menu">
