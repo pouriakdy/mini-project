@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>corner menu</title>
+    <link rel="stylesheet" href="assets/css/tamrin3-corner-menu.css" />
+    <script
+      src="https://kit.fontawesome.com/44f3d7159d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="circle-menu">
+      <a class="menu-button">
+        <i class="fa fa-plus"></i>
+      </a>
+      <nav class="items-wrapper">
+        <a href="#" class="menu-item fa fa-home"></a>
+        <a href="#" class="menu-item fa fa-user"></a>
+        <a href="#" class="menu-item fa fa-chart-pie"></a>
+        <a href="#" class="menu-item fa fa-cog"></a>
+      </nav>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".menu-button").click(function () {
+          $(".circle-menu").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
