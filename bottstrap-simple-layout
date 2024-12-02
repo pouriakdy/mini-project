@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>تمرین 3</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/css/bootstrap-rtl/bootstrap-rtl.css"
+    />
+    <link rel="stylesheet" href="../assets/css/tamrin3.css" />
+    <style>
+      div.list-group a {
+        border: 0;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      p.h3 {
+        font-weight: bold !important;
+      }
+
+      p.h5 {
+        font-size: 17px;
+        font-weight: bold !important;
+      }
+
+      p.h6 {
+        font-size: 14px;
+      }
+
+      .list-group-item {
+        margin-bottom: 0;
+        border-color: #007bff;
+      }
+    </style>
+  </head>
+
+  <body class="rtl">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col px-0">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">لوگو</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active mr-3">
+                  <a class="nav-link" href="#"
+                    >خانه<span class="sr-only">(current)</span></a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">موزیک</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">نمایش</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">درباره من</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col px-0">
+          <div
+            id="carouselIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carouselIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner vw-75 vh-100">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="https://cromsalvatera.com.au/wp-content/uploads/2024/02/Music-Marketing-Digital.jpg"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="https://media.wired.com/photos/6441cc2e6b2fffe52ad78d24/master/w_1920,c_limit/The-Sludgification-Of-Music-Business-503493283.jpghttps://media.wired.com/photos/6441cc2e6b2fffe52ad78d24/master/w_1920,c_limit/The-Sludgification-Of-Music-Business-503493283.jpg"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="https://assets.weforum.org/article/image/responsive_big_webp_l_RiiEHQmsBGeqHMNFw5VH632eeb-r8JE4L7i0LnXaU.webp"
+                  alt="Third slide"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">قبلی</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">بعدی</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-5 d-flex flex-column justify-content-center">
+          <p class="h3">درباره من</p>
+          <img
+            src="https://images.inc.com/uploaded_files/image/1920x1080/getty_481292845_77896.jpg"
+            alt=""
+            class="w-75 mt-3"
+          />
+          <p class="h6 mt-3">متن توضیحات درباره من شامل مشخصات و توضیحات کلی</p>
+          <div class="col mt-4">
+            <p class="h3">لینک های مرتبط</p>
+            <p class="h6 mt-3">نمونه کار های اخیر</p>
+            <div class="list-group mt-3" id="list-tab" role="tablist">
+              <a
+                class="list-group-item list-group-item-action border-0 active"
+                id="list-home-list"
+                data-toggle="list"
+                href="#list-home"
+                role="tab"
+                aria-controls="home"
+                >فعال</a
+              >
+              <a
+                class="list-group-item list-group-item-action border-0"
+                id="list-profile-list"
+                data-toggle="list"
+                href="#list-profile"
+                role="tab"
+                aria-controls="profile"
+                >لینک</a
+              >
+              <a
+                class="list-group-item list-group-item-action border-0"
+                id="list-messages-list"
+                data-toggle="list"
+                href="#list-messages"
+                role="tab"
+                aria-controls="messages"
+                >لینک</a
+              >
+              <a
+                class="list-group-item list-group-item-action border-0 disabled"
+                id="list-settings-list"
+                data-toggle="list"
+                href="#list-settings"
+                role="tab"
+                aria-controls="settings"
+                >غیرفعال</a
+              >
+              <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="list-home"
+                    role="tabpanel"
+                    aria-labelledby="list-home-list"
+                  ></div>
+                  <div
+                    class="tab-pane fade"
+                    id="list-profile"
+                    role="tabpanel"
+                    aria-labelledby="list-profile-list"
+                  ></div>
+                  <div
+                    class="tab-pane fade"
+                    id="list-messages"
+                    role="tabpanel"
+                    aria-labelledby="list-messages-list"
+                  ></div>
+                  <div
+                    class="tab-pane fade"
+                    id="list-settings"
+                    role="tabpanel"
+                    aria-labelledby="list-settings-list"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-7 d-flex flex-column">
+          <div class="col pb-4">
+            <p class="h3">آخرین آثار</p>
+            <p class="h5 mt-3">موزیک ها</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">موزیک 1</li>
+              <li class="list-group-item">موزیک 2</li>
+              <li class="list-group-item">موزیک 3</li>
+              <li class="list-group-item">موزیک 4</li>
+            </ul>
+          </div>
+          <div class="col mt-4">
+            <p class="h3">آخرین نمایش ها</p>
+            <div class="show-info mt-3">
+              <span class="h5">نمایش</span><span class="h5">،</span>
+              <span class="h5">12-آذر-1403</span>
+            </div>
+            <img
+              src="https://img.jakpost.net/c/2019/06/12/2019_06_12_74202_1560308728._large.jpg"
+              alt=""
+              class="w-100 mt-3"
+            />
+            <p class="h6 mt-2">تصویر نمایش اخیر</p>
+            <p class="h6 mt-3">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container-fluid bg-dark d-flex justify-content-center align-items-center mt-5"
+    >
+      <footer class="text-light p-5">footer</footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
